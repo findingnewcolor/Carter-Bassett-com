@@ -42,7 +42,7 @@ export default function Github() {
     <div>
         
         <div>
-            <h3>Here's my GitHub summary</h3>
+            <h3>GitHub summary:</h3>
             {
                 githubData ? ( 
                     <div>
@@ -55,7 +55,7 @@ export default function Github() {
                         {
                             githubRepos ? (
                                 <div>
-                                    <p>Here are my public repos:</p>
+                                    <p>Public repos:</p>
                                     <ul className='grid grid-cols-4 gap-6'>
                                         { githubRepos.map((repo) => (
                                             <a href={repo.html_url} target="_blank" className='border-2 border-white h-48'>
