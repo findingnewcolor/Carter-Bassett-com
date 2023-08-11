@@ -1,10 +1,8 @@
 import Image from 'next/image'
-import Header from '../Components/Header/Header'
-import Github from '@/Components/Header/Github'
-
+import Header from './components/Header/Header'
+import Github from '@/app/components/Github'
 
 export default function Home() {
-  
   return (
     <>
       <Header />
@@ -16,7 +14,6 @@ export default function Home() {
       </div>
 
       <Github />
-
       
     </>
   )
