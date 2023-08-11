@@ -13,6 +13,7 @@ export default function Home() {
         </div>
       </div>
 
+      {/* @ts-expect-error Server Component */}
       <Github />
       
     </>
