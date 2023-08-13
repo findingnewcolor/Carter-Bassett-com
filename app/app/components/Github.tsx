@@ -26,21 +26,19 @@ export default async function Github() {
     const githubData: GithubData = await getGithubData()
     const githubRepos: GithubRepo[] = await getGithubRepos()
     return (
-        <div className="lg:w-[50%] mx-auto">
+        <div className="lg:w-[50%] mx-auto py-5">
             
-            <div>
-                <h3>GitHub summary:</h3>
-                <p>Username: {githubData.login}</p>
-                <p>Public Repos: {githubData.public_repos}</p>
-                <p>Followers: {githubData.followers}</p>
-
-                <h3>GitHub Repos:</h3>
+            <div className="grid col-span-1 justify-center">
+                <div className="flex gap-10 justify-center">
+                    <p>Username: {githubData.login}</p>
+                    <p>Public Repos: {githubData.public_repos}</p>
+                    <p>Followers: {githubData.followers}</p>
+                </div>
                 <ol className="grid grid-cols-2 gap-10 px-10 py-5">
                     {githubRepos.map((repo) => (
-                        <li className="border" key={repo.name}>
-                            <h4>{repo.name}</h4>
+                        <li className="border rounded-md p-4 h-32" key={repo.name}>
+                            <h4><a href={repo.html_url} target="_blank">{repo.name}</a></h4>
                             <p>{repo.description}</p>
-                            <p>{repo.html_url}</p>
                         </li>
                     ))}
                 </ol>
