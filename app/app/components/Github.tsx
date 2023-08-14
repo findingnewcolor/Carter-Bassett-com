@@ -30,7 +30,7 @@ export default async function Github() {
             
             <div className="grid col-span-1 justify-center">
                 <div className="flex gap-10 justify-center">
-                    <p>Username: {githubData.login}</p>
+                    <a href="https://github.com/NicholasHellmers" target="_blank"><p>{githubData.login}</p></a>
                     <p>Public Repos: {githubData.public_repos}</p>
                     <p>Followers: {githubData.followers}</p>
                 </div>

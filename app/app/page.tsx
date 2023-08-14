@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Header from './components/Header/Header'
 import Github from '@/app/components/Github'
+import About from '@/app/components/About'
 
 export default function Home() {
   return (
@@ -12,6 +13,8 @@ export default function Home() {
           <h3>Software Engineer</h3>
         </div>
       </div>
+
+      <About />
 
       {/* @ts-expect-error Server Component */}
       <Github />
