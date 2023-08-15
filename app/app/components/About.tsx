@@ -1,11 +1,10 @@
 export default function About() {
   return (
-    <div className="text-center">
+    <div className="text-center lg:w-[50%] m-auto">
 
         <h2>
             About Me
         </h2>
-
         <p>
             I am a software engineer with a passion for learning and creating new exciting things. I have experience with a wide range of technologies and languages, and I am always looking to learn more.
         </p>
