@@ -35,7 +35,8 @@ export default async function Github() {
                     <p>Followers: {githubData.followers}</p>
                 </div>
                 <ol className="grid grid-cols-1 md:grid-cols-2 gap-10 px-10 py-5">
-                    {githubRepos.map((repo) => (
+                    {/* Limit the github repos to load 4 at a time */}
+                    {githubRepos.slice(0, 4).map((repo: GithubRepo) => (
                         <li className="border rounded-md p-4 h-32" key={repo.name}>
                             <h4><a href={repo.html_url} target="_blank">{repo.name}</a></h4>
                             <p className="overflow-ellipsis overflow-hidden">{repo.description}</p>
