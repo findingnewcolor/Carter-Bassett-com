@@ -8,7 +8,25 @@ type GithubRepo = {
     name: string,
     description: string,
     html_url: string
+    language: string,
 }
+
+const GithubRepoLanguagesToColor: {[key: string]: string} = {
+    "TypeScript": "#3178c6",
+    "Jupyter Notebook": "#DA5B0B",
+    "Go": "#00ADD8",
+    "Python": "#3572A5",
+    "JavaScript": "#F1E05A",
+    "CSS": "#563D7C",
+    "HTML": "#e34c26",
+    "C": "#555555",
+    "C++": "#f34b7d",
+    "C#": "#178600",
+    "Java": "#b07219",
+    "Scala": "#c22d40"
+}
+    
+
 
 async function getGithubData(): Promise<GithubData> {
     const res = await fetch('https://api.github.com/users/NicholasHellmers')
@@ -25,6 +43,9 @@ async function getGithubRepos(): Promise<GithubRepo[]> {
 export default async function Github() {
     const githubData: GithubData = await getGithubData()
     const githubRepos: GithubRepo[] = await getGithubRepos()
+
+
+
     return (
         <div className="lg:w-[50%] mx-auto py-5 leading-loose">
             
@@ -35,11 +56,17 @@ export default async function Github() {
                     <p>Followers: {githubData.followers}</p>
                 </div>
                 <ol className="grid grid-cols-1 md:grid-cols-2 gap-10 px-10 py-5">
-                    {/* Limit the github repos to load 4 at a time */}
-                    {githubRepos.slice(0, 4).map((repo: GithubRepo) => (
-                        <li className="border rounded-md p-4 h-32" key={repo.name}>
+                    {/* Limit the github repos to load 4 at a time and add a button that increases limit by 4 */}
+                    {githubRepos.map(repo => (
+                        <li className="flex flex-col border rounded-md p-4 text-ellipsis overflow-hidden relative" key={repo.name}>
                             <h4><a href={repo.html_url} target="_blank">{repo.name}</a></h4>
-                            <p className="overflow-ellipsis overflow-hidden">{repo.description}</p>
+                            <p className="flex-auto w-[100%]">{repo.description}</p>
+                            <div className="flex gap-2">
+                                <div className="flex items-center">
+                                    <div className="w-2 h-2 rounded-full" style={{backgroundColor: GithubRepoLanguagesToColor[repo.language]}}></div>
+                                </div>
+                                <p>{repo.language}</p>
+                            </div>
                         </li>
                     ))}
                 </ol>
