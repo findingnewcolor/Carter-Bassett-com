@@ -49,6 +49,8 @@ export default async function Github() {
     return (
         <div className="lg:w-[50%] mx-auto py-5 leading-loose">
             
+            <h2 className="text-center text-2xl">My Github Summary</h2>
+
             <div className="grid col-span-1 justify-center">
                 <div className="flex flex-col md:flex-row gap-10 justify-center items-center">
                     <a href="https://github.com/NicholasHellmers" target="_blank"><p>User: {githubData.login}</p></a>
