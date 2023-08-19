@@ -10,7 +10,7 @@ export default function Projects() {
 
       </div>
 
-      <div className='grid grid-cols-1 gap-4 py-5 px-10'>
+      <div className='lg:w-[50%] m-auto grid grid-cols-2 justify-center gap-10 py-5 px-10'>
           <Project
               name='Paraguay Supermarket Products Dataset'
               desc='This dataset includes the name, price (in Guaranies), product url, and image url of supermarket products. The dataset over 40,000 products from 2 different supermarkets in Paraguay. The data was obtained by a scraper I built using Go.'
