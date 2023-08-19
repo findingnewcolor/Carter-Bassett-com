@@ -3,7 +3,7 @@ export default function Footer() {
     <div className="flex gap-12">
         
         <ul>
-            <li></li>
+            <li>YouTube</li>
             <li></li>
             <li></li>
                 
