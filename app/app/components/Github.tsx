@@ -60,15 +60,15 @@ export default async function Github() {
                 </div>
                 <ol className="grid grid-cols-1 md:grid-cols-2 gap-10 px-10 py-5">
                     {/* Limit the github repos to load 4 */}
-                    {githubRepos.slice(0, 4).map((repo) => (
+                    {githubRepos.slice(0, 6).map((repo) => (
                         <li className="flex flex-col border rounded-md p-4 text-ellipsis overflow-hidden relative" key={repo.name}>
                             <h4><a href={repo.html_url} target="_blank">{repo.name}</a></h4>
-                            <p className="flex-auto w-[100%]">{repo.description}</p>
+                            <p className="flex-auto w-[100%] py-3 text-sm font-light text-gray-300">{repo.description}</p>
                             <div className="flex gap-2">
                                 <div className="flex items-center">
                                     <div className="w-2 h-2 rounded-full" style={{backgroundColor: GithubRepoLanguagesToColor[repo.language]}}></div>
                                 </div>
-                                <p>{repo.language}</p>
+                                <p className="text-sm font-light text-gray-300">{repo.language}</p>
                             </div>
                         </li>
                     ))}
