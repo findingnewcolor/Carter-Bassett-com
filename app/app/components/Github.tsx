@@ -44,6 +44,7 @@ export default async function Github() {
     const githubData: GithubData = await getGithubData()
     const githubRepos: GithubRepo[] = await getGithubRepos()
 
+    githubRepos.sort(() => Math.random() - 0.5) // Looks weird but it shuffles the array
 
 
     return (
@@ -58,8 +59,8 @@ export default async function Github() {
                     <p>Followers: {githubData.followers}</p>
                 </div>
                 <ol className="grid grid-cols-1 md:grid-cols-2 gap-10 px-10 py-5">
-                    {/* Limit the github repos to load 4 at a time and add a button that increases limit by 4 */}
-                    {githubRepos.map(repo => (
+                    {/* Limit the github repos to load 4 */}
+                    {githubRepos.slice(0, 4).map((repo) => (
                         <li className="flex flex-col border rounded-md p-4 text-ellipsis overflow-hidden relative" key={repo.name}>
                             <h4><a href={repo.html_url} target="_blank">{repo.name}</a></h4>
                             <p className="flex-auto w-[100%]">{repo.description}</p>
@@ -72,6 +73,12 @@ export default async function Github() {
                         </li>
                     ))}
                 </ol>
+            </div>
+
+            <div className="text-center">
+
+                <a href="https://github.com/NicholasHellmers" target="_blank">Click Here to see more</a>
+
             </div>
 
         </div>
