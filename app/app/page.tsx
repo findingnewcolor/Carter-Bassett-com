@@ -7,7 +7,7 @@ import Projects from './components/Projects/Projects'
 export default function Home() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <div className='w-screen h-48 flex justify-center	items-center'>
         <div className='grid'>
           <h1 className='text-center text-3xl'>Nicholas Hellmers</h1>
