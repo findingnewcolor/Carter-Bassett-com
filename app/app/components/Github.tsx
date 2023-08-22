@@ -77,7 +77,7 @@ export default async function Github() {
 
             <div className="text-center">
 
-                <a href="https://github.com/NicholasHellmers" target="_blank">Click Here to see more</a>
+                <a href="https://github.com/NicholasHellmers?tab=repositories" target="_blank">Click Here to see more</a>
 
             </div>
 
