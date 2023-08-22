@@ -2,7 +2,7 @@ export default function About() {
   return (
     <div className="text-center lg:w-[50%] m-auto py-5 px-10 leading-loose">
 
-        <h2>
+        <h2 className="text-2xl leading-loose">
             About Me
         </h2>
         <p>
@@ -11,7 +11,6 @@ export default function About() {
         <p>
             I am currently working in mastering the concepts of the uses of Golang on the web.
         </p>
-
     </div>
   )
 }
