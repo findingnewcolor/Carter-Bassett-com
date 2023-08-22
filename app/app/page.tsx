@@ -4,6 +4,7 @@ import Github from '@/app/components/Github'
 import About from '@/app/components/About'
 import Projects from './components/Projects/Projects'
 import Contact from './components/Contact'
+import Footer from './components/Footer/Footer'
 
 export default function Home() {
   return (
@@ -23,7 +24,9 @@ export default function Home() {
       {/* @ts-expect-error Server Component */}
       <Github />
 
-      <Contact />
+      {/* <Contact /> */}
+
+      <Footer />
       
     </>
   )
