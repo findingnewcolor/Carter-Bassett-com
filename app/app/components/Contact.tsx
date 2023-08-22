@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
-    <div className="flex flex-col justify-center items-center">
-        <form className="border rounded p-10 flex flex-col gap-10" id="contact" action="" method="post">
+    <div className="">
+        <form className="m-10 lg:m-auto md:w-[50%] lg:w-[35%] border rounded-lg p-10 flex flex-col gap-10 justify-center items-center" id="contact" action="" method="post">
 
             <div>
                 <h4 className="text-2xl">Contact Me</h4>
