@@ -44,9 +44,6 @@ export default async function Github() {
     const githubData: GithubData = await getGithubData()
     const githubRepos: GithubRepo[] = await getGithubRepos()
 
-    githubRepos.sort(() => Math.random() - 0.5) // Looks weird but it shuffles the array
-
-
     return (
         <div className="lg:w-[50%] mx-auto py-5 leading-loose">
             
@@ -59,8 +56,8 @@ export default async function Github() {
                     <p>Followers: {githubData.followers}</p>
                 </div>
                 <ol className="grid grid-cols-1 md:grid-cols-2 gap-10 px-10 py-5">
-                    {/* Limit the github repos to load 4 */}
-                    {githubRepos.slice(0, 6).map((repo) => (
+                    {/* Limit the github repos with languages */}
+                    {githubRepos.filter(repo => repo.language != null).map(repo => (
                         <li className="flex flex-col border rounded-md p-4 text-ellipsis overflow-hidden relative" key={repo.name}>
                             <h4><a href={repo.html_url} target="_blank">{repo.name}</a></h4>
                             <p className="flex-auto w-[100%] py-3 text-sm font-light text-gray-300">{repo.description}</p>

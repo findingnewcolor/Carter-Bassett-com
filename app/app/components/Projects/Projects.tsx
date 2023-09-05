@@ -17,7 +17,6 @@ export default function Projects() {
               project_url='https://www.kaggle.com/datasets/nikihellmers/paraguay-supermarket-products'
               img_url='/dataset-cover.jpeg'
           />
-
       </div>
       
     </div>
