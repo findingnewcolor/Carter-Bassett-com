@@ -23,7 +23,8 @@ const GithubRepoLanguagesToColor: {[key: string]: string} = {
     "C++": "#f34b7d",
     "C#": "#178600",
     "Java": "#b07219",
-    "Scala": "#c22d40"
+    "Scala": "#c22d40",
+    "Rust": "#dea584"
 }
     
 
