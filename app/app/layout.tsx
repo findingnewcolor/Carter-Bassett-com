@@ -15,6 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <meta property="og:title" content="Personal Website of Nicholas Hellmers Davalos" />
       <body className={inter.className} suppressHydrationWarning={true}>{children}</body>
     </html>
   )
