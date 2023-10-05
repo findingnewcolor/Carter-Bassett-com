@@ -24,7 +24,21 @@ const GithubRepoLanguagesToColor: {[key: string]: string} = {
     "C#": "#178600",
     "Java": "#b07219",
     "Scala": "#c22d40",
-    "Rust": "#dea584"
+    "Rust": "#dea584",
+    "Ruby": "#701516",
+    "Shell": "#89e051",
+    "PHP": "#4F5D95",
+    "Swift": "#ffac45",
+    "Kotlin": "#F18E33",
+    "Dart": "#00B4AB",
+    "Vue": "#2c3e50",
+    "R": "#198CE7",
+    "Perl": "#0298c3",
+    "Lua": "#000080",
+    "Haskell": "#5e5086",
+    "Clojure": "#db5855",
+    "Arduino": "#bd79d1",
+    "TeX": "#3D6117"
 }
     
 
