@@ -17,6 +17,12 @@ export default function Projects() {
               project_url='https://www.kaggle.com/datasets/nikihellmers/paraguay-supermarket-products'
               img_url='/dataset-cover.jpeg'
           />
+          <Project
+              name='Paraguay Supermarket Products WebApp (Just Started)'
+              desc='This uses the information gained from "Paraguayan Supermarket Products Dataset" in order to make an interative querying of the data into webapp form.'
+              project_url='https://productos-paraguay-5li52p0cc-nicholashellmers.vercel.app/'
+              img_url='/sm-webapp.png'
+          />
       </div>
       
     </div>
