@@ -18,10 +18,16 @@ export default function Projects() {
               img_url='/dataset-cover.jpeg'
           />
           <Project
-              name='Paraguay Supermarket Products WebApp (Just Started)'
+              name='Paraguay Supermarket Products WebApp'
               desc='This uses the information gained from "Paraguayan Supermarket Products Dataset" in order to make an interative querying of the data into webapp form.'
               project_url='https://productos-paraguay-5li52p0cc-nicholashellmers.vercel.app/'
               img_url='/sm-webapp.png'
+          />
+          <Project
+              name='Connect with your peers'
+              desc='This Chrome extension project aims to streamline the networking with your peers on Canvas.'
+              project_url='https://chromewebstore.google.com/detail/connect-with-your-peers/cefoneomgidhcbjohhnbfffdeikjopbj'
+              img_url='/unnamed.png'
           />
       </div>
       

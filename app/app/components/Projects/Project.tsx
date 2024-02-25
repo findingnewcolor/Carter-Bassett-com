@@ -9,7 +9,7 @@ export default function Project(props: project) {
   return (
     <a className="m-auto h-[100%] border rounded-lg overflow-hidden" href={props.project_url} target="_blank">
         <div className="leading-loose max-w-[25rem]">
-                <img className="object-cover h-52" src={props.img_url} alt={props.name}/>
+                <img className="object-cover h-52 w-[100%]" src={props.img_url} alt={props.name}/>
                 <div className="py-3 px-5">
                   <h1>{props.name}</h1>
                   <p className="text-sm font-light text-gray-300">{props.desc}</p>
