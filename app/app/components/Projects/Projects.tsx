@@ -20,7 +20,7 @@ export default function Projects() {
           <Project
               name='Paraguay Supermarket Products WebApp'
               desc='This uses the information gained from "Paraguayan Supermarket Products Dataset" in order to make an interative querying of the data into webapp form.'
-              project_url='https://productos-paraguay-5li52p0cc-nicholashellmers.vercel.app/'
+              project_url='https://productos-paraguay.vercel.app/'
               img_url='/sm-webapp.png'
           />
           <Project
