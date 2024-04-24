@@ -68,7 +68,6 @@ export default async function Github() {
                 <div className="flex flex-col md:flex-row gap-10 justify-center items-center">
                     <a href="https://github.com/NicholasHellmers" target="_blank"><p>User: {githubData.login}</p></a>
                     <p>Public Repos: {githubData.public_repos}</p>
-                    <p>Followers: {githubData.followers}</p>
                 </div>
                 <ol className="grid grid-cols-1 md:grid-cols-2 gap-10 px-10 py-5">
                     {/* Limit the github repos with languages */}

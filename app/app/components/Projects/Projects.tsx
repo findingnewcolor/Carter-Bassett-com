@@ -2,7 +2,7 @@ import Project from './Project';
 
 export default function Projects() {
   return (
-    <div>
+    <div className='pt-5'>
 
       <div>
 
