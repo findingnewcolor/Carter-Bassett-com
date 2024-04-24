@@ -9,7 +9,8 @@ export default function Home() {
   return (
     <>
       <Header />
-      <div className='w-screen h-48 flex justify-center	items-center'>
+      <div className='py-12 w-screen flex flex-col justify-center items-center gap-12'>
+        <Image src='/profile.jpeg' alt='Profile Picture' width={200} height={200} className='rounded-full' />
         <div className='grid'>
           <h1 className='text-center text-3xl'>Nicholas Hellmers Davalos</h1>
           <h3 className='text-center text-2xl'>Software Engineer</h3>
