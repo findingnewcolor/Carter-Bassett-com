@@ -1,0 +1,9 @@
+sudo npm run dev
+npm run
+npm run-script
+npm run script
+npm start
+npm
+npm run dev
+npm install
+npm run dev
