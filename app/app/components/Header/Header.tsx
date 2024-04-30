@@ -11,7 +11,7 @@ export default function Header() {
                 <a href="https://www.linkedin.com/in/carter-bassett" target="_blank">LinkedIn</a>
             </li>
             <li>
-              <a href="/Carter Bassett Resume April 2024.pdf" target="_blank">Resume</a>
+              <a href="/Carter\ Bassett\ Resume\ April\ 2024.pdf" target="_blank">Resume</a>
             </li>
         </ul>
     </div>
