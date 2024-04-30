@@ -23,6 +23,12 @@ export default function Projects() {
               project_url='https://github.com/findingnewcolor/RayTracer'
               img_url='/RTS2v5_dark.png'
           />
+          <Project
+              name='Website Group Project'
+              desc='Done under my school github account: BassettC. Collaborated with a group of students to develop a functioning website from scratch. Our website is intended to connect tutors and students, improving learning outcomes.'
+              project_url='https://github.com/cam-2/tutorproject'
+              img_url='/3308_basic_diagram.drawio.png'
+          />
       </div>
       
     </div>
