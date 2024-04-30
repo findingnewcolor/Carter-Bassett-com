@@ -4,8 +4,8 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Niki Hellmers',
-  description: 'Personal Website of Nicholas Hellmers Davalos',
+  title: 'Carter Bassett',
+  description: 'Carter Bassett\'s Personal Website',
 }
 
 export default function RootLayout({
@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <meta property="og:title" content="Personal Website of Nicholas Hellmers Davalos" />
+      <meta property="og:title" content="Carter Bassett's Personal Website" />
       <body className={inter.className} suppressHydrationWarning={true}>{children}</body>
     </html>
   )

@@ -44,13 +44,13 @@ const GithubRepoLanguagesToColor: {[key: string]: string} = {
 
 
 async function getGithubData(): Promise<GithubData> {
-    const res = await fetch('https://api.github.com/users/NicholasHellmers')
+    const res = await fetch('https://api.github.com/users/findingnewcolor')
     const data: GithubData = await res.json()
     return data
 }
 
 async function getGithubRepos(): Promise<GithubRepo[]> {
-    const res = await fetch('https://api.github.com/users/NicholasHellmers/repos')
+    const res = await fetch('https://api.github.com/users/findingnewcolor/repos')
     const data: GithubRepo[] = await res.json()
     return data
 }
@@ -88,7 +88,7 @@ export default async function Github() {
 
             <div className="text-center">
 
-                <a href="https://github.com/NicholasHellmers?tab=repositories" target="_blank">Click Here to see more</a>
+                <a href="https://github.com/findingnewcolor?tab=repositories" target="_blank">Click Here to see more</a>
 
             </div>
 
