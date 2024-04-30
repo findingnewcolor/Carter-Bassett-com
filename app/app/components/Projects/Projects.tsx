@@ -17,6 +17,12 @@ export default function Projects() {
               project_url='https://github.com/findingnewcolor/SkipList-HashTable'
               img_url='/skiplist.png'
           />
+          <Project
+              name='RayTracing in C++'
+              desc='Creates images simulating visual properties of objects of various compositions when struck by light from varying sources, intensities, and directions.'
+              project_url='https://github.com/findingnewcolor/RayTracer'
+              img_url='/RTS2v5_dark.png'
+          />
       </div>
       
     </div>
