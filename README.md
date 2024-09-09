@@ -1,6 +1,4 @@
-# name-lastname.com
-Personal Website Template
+# carterbassett.com
+This is a personal website built on nextjs.
 
-This is a personal website template built on nextjs.
-
-If you find anything useful, feel free to copy. I really don't care.
+Credit to Nicholas Hellmers for creating the original template.
